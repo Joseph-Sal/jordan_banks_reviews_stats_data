@@ -96,7 +96,7 @@ with sync_playwright() as p:
         # ---------------------------
         star_counts = {
             f"{s}_star_count": round(total_ratings * histogram[s] / 100)
-            for s in histogram
+            for s in ["1", "2", "3", "4", "5"]
         }
 
         # ---------------------------
